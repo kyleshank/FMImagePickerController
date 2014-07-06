@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FMImagePickerController/FMImagePickerController.h>
 
-@interface FMViewController : UIViewController
+@interface FMViewController : FMImagePickerController
 
 @end

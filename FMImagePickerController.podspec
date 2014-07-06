@@ -12,17 +12,14 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.summary          = "A short description of FMImagePickerController."
   s.description      = <<-DESC
-                       An optional longer description of FMImagePickerController
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       An asset picker for iOS that allows for multiple selection, supports both photos and videos and features a navbar dropdown for switching albums.
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/FMImagePickerController"
+  s.homepage         = "https://github.com/formal-method/FMImagePickerController"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Kyle Shank" => "kyle.shank@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/FMImagePickerController.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/formal-method/FMImagePickerController.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/formal_method'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true

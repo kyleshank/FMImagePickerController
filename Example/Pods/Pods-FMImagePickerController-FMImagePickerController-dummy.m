@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_FMImagePickerController_FMImagePickerController : NSObject
+@end
+@implementation PodsDummy_Pods_FMImagePickerController_FMImagePickerController
+@end

@@ -1,25 +1,68 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vx5-bk-Hzh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Navigation Controller-->
+        <scene sceneID="ig9-6E-tMP">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="FMViewController" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="vx5-bk-Hzh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3ZD-8W-OZh">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LzI-NS-cH5" kind="relationship" relationship="rootViewController" id="elu-zP-b4W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lUD-bF-FWW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-496" y="362"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="U2i-sG-Qoc">
+            <objects>
+                <viewController id="LzI-NS-cH5" customClass="FMViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="2i1-hY-Hcc"/>
+                        <viewControllerLayoutGuide type="bottom" id="cry-nW-7SW"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="OrV-8D-I8B">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="86l-dt-b0j">
+                        <barButtonItem key="rightBarButtonItem" title="Select" id="TeA-ct-LiM">
+                            <connections>
+                                <action selector="select:" destination="LzI-NS-cH5" id="xr2-6C-Rb4"/>
+                                <segue destination="MgL-O4-ax7" kind="push" identifier="Select" id="H3w-Wl-Hqi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hjT-kD-8CT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="79" y="366"/>
+        </scene>
+        <!--Selected View Controller - Selected-->
+        <scene sceneID="sL6-BW-xY4">
+            <objects>
+                <viewController title="Selected" id="MgL-O4-ax7" customClass="FMSelectedViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mbh-Mc-OKK"/>
+                        <viewControllerLayoutGuide type="bottom" id="xnP-jz-KsA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vk5-bv-VR9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Selected" id="oXb-Zi-iSX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cuK-N9-6DC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="600" y="366"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
