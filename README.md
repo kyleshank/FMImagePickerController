@@ -1,6 +1,6 @@
 # FMImagePickerController
 
-[![CI Status](http://img.shields.io/travis/Kyle Shank/FMImagePickerController.svg?style=flat)](https://travis-ci.org/Kyle Shank/FMImagePickerController)
+[![CI Status](http://img.shields.io/travis/formal-method/FMImagePickerController.svg?style=flat)](https://travis-ci.org/formal-method/FMImagePickerController)
 [![Version](https://img.shields.io/cocoapods/v/FMImagePickerController.svg?style=flat)](http://cocoadocs.org/docsets/FMImagePickerController)
 [![License](https://img.shields.io/cocoapods/l/FMImagePickerController.svg?style=flat)](http://cocoadocs.org/docsets/FMImagePickerController)
 [![Platform](https://img.shields.io/cocoapods/p/FMImagePickerController.svg?style=flat)](http://cocoadocs.org/docsets/FMImagePickerController)
