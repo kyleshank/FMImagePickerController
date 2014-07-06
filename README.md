@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/FMImagePickerController.svg?style=flat)](http://cocoadocs.org/docsets/FMImagePickerController)
 [![Platform](https://img.shields.io/cocoapods/p/FMImagePickerController.svg?style=flat)](http://cocoadocs.org/docsets/FMImagePickerController)
 
+![FMImagePickerController Picker](screenshot0.jpg)
+![FMImagePickerController Picker Selection](screenshot1.jpg)
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
