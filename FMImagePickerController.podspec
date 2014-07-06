@@ -10,9 +10,11 @@
 Pod::Spec.new do |s|
   s.name             = "FMImagePickerController"
   s.version          = "0.1.0"
-  s.summary          = "A short description of FMImagePickerController."
+  s.summary          = "An asset picker for iOS that allows for multiple selection."
   s.description      = <<-DESC
                        An asset picker for iOS that allows for multiple selection, supports both photos and videos and features a navbar dropdown for switching albums.
+                       
+                       Designed for iOS7+.
                        DESC
   s.homepage         = "https://github.com/formal-method/FMImagePickerController"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
