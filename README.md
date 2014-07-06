@@ -20,7 +20,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-Kyle Shank, kyle.shank@gmail.com
+Kyle Shank, kyle@formalmethod.net
 
 ## License
 
