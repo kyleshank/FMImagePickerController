@@ -12,4 +12,5 @@
 @interface FMImagePickerController : FMAssetCollectionViewController <UIActionSheetDelegate>
 @property (nonatomic, retain) ALAssetsGroup *assetGroup;
 @property BOOL ascending;
+@property ALAssetsFilter* assetsFilter;
 @end

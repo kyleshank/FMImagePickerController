@@ -22,6 +22,7 @@
     if(self = [super initWithCoder:aDecoder]){
         self.selectionMode=YES;
         self.ascending=NO;
+        self.assetsFilter = [ALAssetsFilter allAssets];
     }
     return self;
 }
@@ -59,7 +60,7 @@
                    self.assetGroups = newGroups;
                    // Reload albums
                    ALAssetsGroup *g = (ALAssetsGroup*)[self.assetGroups objectAtIndex:0];
-                   [g setAssetsFilter:[ALAssetsFilter allAssets]];
+                   [g setAssetsFilter:self.assetsFilter];
                    
                    self.assetGroup = g;
                    return;
