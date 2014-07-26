@@ -142,12 +142,21 @@
         }
         [self.collectionView reloadData];
     }
+    
+    if(self.delegate!=nil){
+        ALAsset* asset = [self.assets objectAtIndex:index];
+        [self.delegate assetTapped:asset atIndex:index];
+    }
 }
 
 - (void)assetLongPress:(UILongPressGestureRecognizer *)pressRecognizer
 {
     if(pressRecognizer.state == UIGestureRecognizerStateBegan){
-        // Do something
+        NSInteger index = pressRecognizer.view.tag;
+        if(self.delegate!=nil){
+            ALAsset* asset = [self.assets objectAtIndex:index];
+            [self.delegate assetLongPressed:asset atIndex:index];
+        }
     }
 }
 

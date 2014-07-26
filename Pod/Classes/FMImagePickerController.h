@@ -9,7 +9,7 @@
 #import "FMAssetCollectionViewController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 
-@interface FMImagePickerController : FMAssetCollectionViewController <UIActionSheetDelegate>
+@interface FMImagePickerController : FMAssetCollectionViewController <UIActionSheetDelegate, FMAssetCollectionViewControllerDelegate>
 @property (nonatomic, retain) ALAssetsGroup *assetGroup;
 @property BOOL ascending;
 @property ALAssetsFilter* assetsFilter;

@@ -23,6 +23,7 @@
         self.selectionMode=YES;
         self.ascending=NO;
         self.assetsFilter = [ALAssetsFilter allAssets];
+        self.delegate=self;
     }
     return self;
 }
@@ -165,6 +166,14 @@
     if(![[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Cancel"]){
         [self setAssetGroup:[self.assetGroups objectAtIndex:buttonIndex]];
     }
+}
+
+-(void)assetTapped:(ALAsset*)asset atIndex:(NSUInteger)index{
+    
+}
+
+-(void)assetLongPressed:(ALAsset*)asset atIndex:(NSUInteger)index{
+    
 }
 
 @end

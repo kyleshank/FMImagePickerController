@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "FMImagePickerController"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "An asset picker for iOS that allows for multiple selection."
   s.description      = <<-DESC
                        An asset picker for iOS that allows for multiple selection, supports both photos and videos and features a navbar dropdown for switching albums.
@@ -28,4 +28,8 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes'
   s.resources = 'Pod/Assets/*.png'
+
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit'
+  # s.dependency 'AFNetworking', '~> 2.3'
 end
