@@ -21,4 +21,6 @@
 @property NSUInteger cellSize;
 @property CGFloat cellSpacing;
 -(NSArray*)selectedAssets;
+-(void)deselectAll;
+-(void)selectAll;
 @end

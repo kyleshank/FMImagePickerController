@@ -185,4 +185,17 @@
     return selection;
 }
 
+-(void)deselectAll{
+    [self.selected removeAllObjects];
+    [self.collectionView reloadData];
+}
+
+-(void)selectAll{
+    [self.selected removeAllObjects];
+    for(int index = 0; index < [self.assets count]; index++){
+        [self.selected addObject:[NSNumber numberWithInteger:index]];
+    }
+    [self.collectionView reloadData];
+}
+
 @end
