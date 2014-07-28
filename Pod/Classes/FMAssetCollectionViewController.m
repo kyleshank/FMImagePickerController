@@ -45,10 +45,12 @@
     self.selected = [NSMutableArray array];
     self.selectionMode = NO;
     self.cellSize = 75;
+    self.cellSpacing = 4.0;
     if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
         self.cellSize = 150;
+        self.cellSpacing = 3.0;
     }
-    self.cellSpacing = 4.0;
+    
 }
 
 -(void)loadView{
