@@ -28,7 +28,7 @@
 #define COCOAPODS_POD_AVAILABLE_FMImagePickerController
 #define COCOAPODS_VERSION_MAJOR_FMImagePickerController 0
 #define COCOAPODS_VERSION_MINOR_FMImagePickerController 1
-#define COCOAPODS_VERSION_PATCH_FMImagePickerController 0
+#define COCOAPODS_VERSION_PATCH_FMImagePickerController 4
 
 // Specta
 #define COCOAPODS_POD_AVAILABLE_Specta
