@@ -81,7 +81,7 @@
            
            // Group Enumerator Failure Block
            void (^assetGroupEnumberatorFailure)(NSError *) = ^(NSError *error) {
-               UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Photos access error" message:@"Cloudgram doesn't have permission to access your photos. Go to Settings > Privacy > Photos to grant access." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+               UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Photos access error" message:@"The app doesn't have permission to access your photos. Go to Settings > Privacy > Photos to grant access." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                [alert show];
            };
            

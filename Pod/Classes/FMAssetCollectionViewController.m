@@ -44,20 +44,18 @@
     self.assets = [NSArray array];
     self.selected = [NSMutableArray array];
     self.selectionMode = NO;
-    self.cellSize = 75;
-    self.cellSpacing = 4.0;
+    self.cellSize = ([[UIScreen mainScreen] bounds].size.width-3.0) / 4.0;
+    self.cellSpacing = 1.0;
     if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
-        self.cellSize = 150;
-        self.cellSpacing = 3.0;
+        self.cellSize = ([[UIScreen mainScreen] bounds].size.width-5.0) / 6.0;
     }
-    
 }
 
 -(void)loadView{
     UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc] init];
     layout.minimumInteritemSpacing=self.cellSpacing;
     layout.minimumLineSpacing=self.cellSpacing;
-    layout.sectionInset = UIEdgeInsetsMake(self.cellSpacing, self.cellSpacing, self.cellSpacing, self.cellSpacing);
+    layout.sectionInset = UIEdgeInsetsMake(0.0, 0.0, 0.0, 0.0);
     self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     [self.collectionView setBackgroundColor:[UIColor whiteColor]];
     [self.collectionView setDataSource:self];
@@ -83,6 +81,10 @@
     _assets = assets;
     self.selected = [NSMutableArray array];
     if(self.collectionView){
+        self.cellSize = (self.collectionView.frame.size.width-3.0) / 4.0;
+        if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
+            self.cellSize = (self.collectionView.frame.size.width-5.0) / 6.0;
+        }
         dispatch_async(dispatch_get_main_queue(), ^
         {
             [self.collectionView setContentOffset:CGPointZero animated:NO];
