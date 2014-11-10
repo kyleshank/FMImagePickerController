@@ -13,4 +13,5 @@
 @property (nonatomic, retain) ALAssetsGroup *assetGroup;
 @property BOOL ascending;
 @property ALAssetsFilter* assetsFilter;
+@property (strong, retain) ALAssetsLibrary *library;
 @end

@@ -12,7 +12,6 @@
 #define FM_COLLECTION_CELL_REUSE_ID @"FMCollectionViewCell"
 
 @interface FMAssetCollectionViewController ()
-@property (nonatomic, retain) UICollectionView* collectionView;
 @property (nonatomic, retain) NSMutableArray* selected;
 @end
 

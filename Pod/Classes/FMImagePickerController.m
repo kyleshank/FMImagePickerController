@@ -12,7 +12,6 @@
 @interface FMImagePickerController ()
 
 @property (nonatomic, retain) NSMutableArray *assetGroups;
-@property (nonatomic, retain) ALAssetsLibrary *library;
 
 @end
 

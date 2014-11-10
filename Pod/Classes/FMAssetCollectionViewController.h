@@ -23,4 +23,5 @@
 -(NSArray*)selectedAssets;
 -(void)deselectAll;
 -(void)selectAll;
+@property (nonatomic, retain) UICollectionView* collectionView;
 @end
